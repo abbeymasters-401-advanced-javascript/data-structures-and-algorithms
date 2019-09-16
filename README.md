@@ -1,1 +1,2 @@
-# data-structures-and-algorithms
+# TABLE OF CONTENTS
+[Day One] - (challenges/arrayReverse/arrayReverse.js)

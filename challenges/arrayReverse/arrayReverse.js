@@ -1,11 +1,10 @@
-
-let newArray = [];
-
-function reverseArray(arr) {
-    for(let i = arr.length - 1; i >= 0; i--) {
-        newArray.push(arr[i]);
+function reverseArray(input) {
+    let index = 0;
+    let array = [];
+    for(let i = input.length - 1; i >= 0; i--) {
+        array[index] = input[i];
+        index += 1;
     }
-    return newArray;
+    return array;
 }
 
-reverseArray(arr);

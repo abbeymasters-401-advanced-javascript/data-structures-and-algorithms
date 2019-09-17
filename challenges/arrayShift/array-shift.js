@@ -12,10 +12,4 @@ function insertShiftArray(arr, input) {
   return newArray;
 }
 
-
-const arrayOne = [2,4,6,8];
-const inputOne = 5;
-
-console.log(insertShiftArray(arrayOne, inputOne));
-
 module.exports = insertShiftArray;

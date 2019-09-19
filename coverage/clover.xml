@@ -1,20 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1568742128387" clover="3.2.0">
-  <project timestamp="1568742128387" name="All files">
-    <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="12" coveredelements="12" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
-    <file name="array-shift.js" path="/Users/abbeymasters/alchemy/career-track/data-structures-and-algorithms/challenges/arrayShift/array-shift.js">
+<coverage generated="1568851165604" clover="3.2.0">
+  <project timestamp="1568851165604" name="All files">
+    <metrics statements="23" coveredstatements="21" conditionals="6" coveredconditionals="3" methods="2" coveredmethods="2" elements="31" coveredelements="26" complexity="0" loc="23" ncloc="23" packages="2" files="2" classes="2"/>
+    <package name="arrayBinarySearch">
+      <metrics statements="12" coveredstatements="10" conditionals="6" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <file name="array-binary-search.js" path="/Users/abbeymasters/alchemy/career-track/data-structures-and-algorithms/challenges/arrayBinarySearch/array-binary-search.js">
+        <metrics statements="12" coveredstatements="10" conditionals="6" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="arrayShift">
       <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="2" count="2" type="stmt"/>
-      <line num="3" count="2" type="stmt"/>
-      <line num="4" count="2" type="stmt"/>
-      <line num="5" count="2" type="stmt"/>
-      <line num="6" count="5" type="stmt"/>
-      <line num="7" count="5" type="stmt"/>
-      <line num="8" count="2" type="stmt"/>
-      <line num="9" count="2" type="stmt"/>
-      <line num="10" count="4" type="stmt"/>
-      <line num="12" count="2" type="stmt"/>
-      <line num="15" count="1" type="stmt"/>
-    </file>
+      <file name="array-shift.js" path="/Users/abbeymasters/alchemy/career-track/data-structures-and-algorithms/challenges/arrayShift/array-shift.js">
+        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>

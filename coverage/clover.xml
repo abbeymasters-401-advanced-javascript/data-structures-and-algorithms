@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1568851165604" clover="3.2.0">
-  <project timestamp="1568851165604" name="All files">
-    <metrics statements="23" coveredstatements="21" conditionals="6" coveredconditionals="3" methods="2" coveredmethods="2" elements="31" coveredelements="26" complexity="0" loc="23" ncloc="23" packages="2" files="2" classes="2"/>
+<coverage generated="1569010979004" clover="3.2.0">
+  <project timestamp="1569010979004" name="All files">
+    <metrics statements="44" coveredstatements="42" conditionals="8" coveredconditionals="5" methods="7" coveredmethods="7" elements="59" coveredelements="54" complexity="0" loc="44" ncloc="44" packages="3" files="3" classes="3"/>
     <package name="arrayBinarySearch">
       <metrics statements="12" coveredstatements="10" conditionals="6" coveredconditionals="3" methods="1" coveredmethods="1"/>
       <file name="array-binary-search.js" path="/Users/abbeymasters/alchemy/career-track/data-structures-and-algorithms/challenges/arrayBinarySearch/array-binary-search.js">
@@ -35,6 +35,33 @@
         <line num="10" count="4" type="stmt"/>
         <line num="12" count="2" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="linkedList">
+      <metrics statements="21" coveredstatements="21" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
+      <file name="linked-list.js" path="/Users/abbeymasters/alchemy/career-track/data-structures-and-algorithms/challenges/linkedList/linked-list.js">
+        <metrics statements="21" coveredstatements="21" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="10" count="7" type="stmt"/>
+        <line num="11" count="7" type="stmt"/>
+        <line num="14" count="10" type="stmt"/>
+        <line num="15" count="10" type="stmt"/>
+        <line num="17" count="10" type="stmt"/>
+        <line num="18" count="10" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="3" type="stmt"/>
+        <line num="35" count="3" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
       </file>
     </package>
   </project>

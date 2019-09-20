@@ -20,7 +20,7 @@ class LinkedList {
   includes(value) {
     let currentNode = this.head;
     for(let i = 0; i < this.size; i++) {
-      if(currentNode === value) {
+      if(currentNode.value === value) {
         return true;
       } else {
         currentNode = currentNode.next;
@@ -31,7 +31,7 @@ class LinkedList {
     let emptyStr = '';
     let currentNode = this.head;
     for(let i = 0; i < this.size; i++) {
-      emptyStr + `${currentNode.value}`;
+      emptyStr += ` ${currentNode.value}`;
       currentNode = currentNode.next;
     } return emptyStr;
   } 

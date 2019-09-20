@@ -25,11 +25,16 @@ class LinkedList {
       } else {
         currentNode = currentNode.next;
       }
-    }
+    } return false;
   }
-  toString(value) {
-
-  }
+  toString() {
+    let emptyStr = '';
+    let currentNode = this.head;
+    for(let i = 0; i < this.size; i++) {
+      emptyStr + `${currentNode.value}`;
+      currentNode = currentNode.next;
+    } return emptyStr;
+  } 
 }
 
 module.exports = {

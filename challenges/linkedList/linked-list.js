@@ -9,7 +9,12 @@ class LinkedList {
   constructor() {
     this.head = null;
     this.size = 0;
-  }
+  } 
+  /**
+   * Inserts value into a Node List at the head 
+   * @param value 
+   */
+
   insert(value) {
     const node = new Node(value);
     node.next = this.head;
@@ -17,6 +22,13 @@ class LinkedList {
     this.head = node;
     this.size++;
   }
+
+  /**
+   * Checks if value is included in node list 
+   * @returns boolean
+   * @param value 
+   */
+
   includes(value) {
     let currentNode = this.head;
     for(let i = 0; i < this.size; i++) {
@@ -27,6 +39,12 @@ class LinkedList {
       }
     } return false;
   }
+
+  /**
+   * Turns all node items into a string 
+   * @returns string
+   * @param value 
+   */
   toString() {
     let emptyStr = '';
     let currentNode = this.head;

@@ -8,3 +8,5 @@ function reverseArray(input) {
   return array;
 }
 
+reverseArray();
+

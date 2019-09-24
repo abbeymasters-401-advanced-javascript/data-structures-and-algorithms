@@ -94,4 +94,30 @@ describe('Linked Lists', () => {
     expect(list.head.next.next.value).toEqual('abbeyThree');
   });
 
+  it('Can successfully insert a node before a node located in the middle of a linked list', () => {
+    const list = new linkedListClass.LinkedList();
+    const valueOne = 'abbey';
+    const valueTwo = 'abbeyTwo';
+    const valueThree = 'abbeyThree';
+    list.insert(valueOne);
+    list.insert(valueTwo);
+    list.insert(valueThree);
+    list.insertBefore('abbey', 'abbeyMIDDLE');
+
+    expect(list.size).toEqual(4);
+    expect(list.head.next.value.value).toBe('abbeyMIDDLE');
+  });
+
+  it('Can successfully insert a node before the first node of a linked list', () => {
+    const list = new linkedListClass.LinkedList();
+
+    const valueOne = 'abbey';
+    const valueTwo = 'abbeyTwo';
+    const valueThree = 'abbeyThree';
+    list.insert(valueOne);
+    list.insert(valueTwo);
+    list.insertBefore(valueOne, valueThree);
+    expect(list.size).toEqual(3);
+    expect(list.head.value.value).toBe('abbeyThree');
+  });
 });

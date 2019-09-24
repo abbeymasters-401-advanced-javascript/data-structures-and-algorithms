@@ -31,13 +31,9 @@ class LinkedList {
 
   includes(value) {
     let currentNode = this.head;
-    for(let i = 0; i < this.size; i++) {
-      if(currentNode.value === value) {
-        return true;
-      } else {
-        currentNode = currentNode.next;
-      }
-    } return false;
+    while(currentNode.value !== value) {
+      return false;
+    } return true;
   }
 
   /**
@@ -48,10 +44,12 @@ class LinkedList {
   toString() {
     let emptyStr = '';
     let currentNode = this.head;
-    for(let i = 0; i < this.size; i++) {
+
+    while(currentNode !== null) {
       emptyStr += ` ${currentNode.value}`;
       currentNode = currentNode.next;
-    } return emptyStr;
+    } 
+    return emptyStr;
   } 
 
   /**
@@ -76,21 +74,27 @@ class LinkedList {
   insertBefore(value, newVal) {
     const node = new Node(newVal);
     let currentNode = this.head;
-    while(currentNode.value === value) {
-      currentNode.next = currentNode;
+
+    if(currentNode === null) {
       currentNode = node;
+      console.log(currentNode);
+      this.size++;
+    } else {
+      while(currentNode.next.value !== value) {
+        currentNode = currentNode.next;
+      } 
+      currentNode.value = node;
+      this.size++;
     }
   }
 
-  insertAfter(value, newVal) {
-    const node = new Node(value);
+  // insertAfter(value, newVal) {
+  //   const node = new Node(value);
 
-  }
+  // }
 
 
 }
-
-
 
 
 module.exports = {

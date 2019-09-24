@@ -132,11 +132,25 @@ describe('Linked Lists', () => {
     list.insert(valueThree);
     expect(list.size).toEqual(3);
     expect(list.head.value).toEqual('abbeyThree');
+    expect(valueTwo).toBe(list.head.next.value);
+    list.insertAfter(valueTwo, 'abbeyMIDDLE');
+    expect('abbeyMIDDLE').toBe(list.head.next.next.value);
 
   });
 
   it('Can successfully insert a node after the last node of the linked list', () => {
+    const list = new linkedListClass.LinkedList();
 
+    const valueOne = 'abbey';
+    const valueTwo = 'abbeyTwo';
+    const valueThree = 'abbeyThree';
+    list.insert(valueOne);
+    list.insert(valueTwo);
+    list.insert(valueThree);
+
+    list.append('abbeyLAST');
+    expect(list.size).toBe(4);
+    expect(list.head.next.next.next.value).toBe('abbeyLAST');
   });
 
 });

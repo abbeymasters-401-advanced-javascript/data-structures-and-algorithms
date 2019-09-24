@@ -4,3 +4,4 @@
 [Day Three] — (challenges/arrayBinarySearch/array-binary-search.js)
 [Day Five] — (challenges/linkedList.js)
 [Day Six] — (challenges/linkedList.js)
+[Day Seven] — (challenges/linkedList.js)

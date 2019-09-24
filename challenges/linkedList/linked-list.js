@@ -71,6 +71,11 @@ class LinkedList {
       this.size++;
     }
   }
+
+  /**
+   * Inserts newVal before the node that equals value
+   * @param value, newVal
+   */
   insertBefore(value, newVal) {
     const node = new Node(newVal);
     let currentNode = this.head;
@@ -84,11 +89,14 @@ class LinkedList {
       } 
       node.next = currentNode.next;
       currentNode.next = node;
-    
       this.size++;
     }
   }
 
+  /**
+   * Insert newVal after the node that equals value
+   * @param value, newVal
+   */
   insertAfter(value, newVal) {
     const node = new Node(newVal);
     let currentNode = this.head;
@@ -105,6 +113,24 @@ class LinkedList {
     currentNode.next = node;
     this.size++;
   }
+  /**
+   * Return the node’s value that is k from the end of the linked list.
+   * @param k
+   * @returns value
+   */
+  kthFromEnd(k) {
+    let currentNode = this.head;
+    let counter = 1;
+
+    while(currentNode !== null) {
+      currentNode = currentNode.next;
+      counter++;
+      if(counter === this.size - k && currentNode !== null) {
+        return currentNode.value; 
+      }
+    } return 'exception';
+  }
+
 }
 
 module.exports = {

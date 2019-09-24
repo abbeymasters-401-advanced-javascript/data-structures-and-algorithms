@@ -77,7 +77,6 @@ class LinkedList {
 
     if(currentNode === null) {
       currentNode = node;
-      console.log(currentNode);
       this.size++;
     } else {
       while(currentNode.next.value !== value) {
@@ -88,10 +87,20 @@ class LinkedList {
     }
   }
 
-  // insertAfter(value, newVal) {
-  //   const node = new Node(value);
+  insertAfter(value, newVal) {
+    const node = new Node(newVal);
+    let currentNode = this.head;
 
-  // }
+    if(currentNode === null) {
+      currentNode = node;
+      this.size++;
+    } else {
+      while(currentNode.value !== value) {
+        currentNode = currentNode.next;
+      }
+    } currentNode.next = node;
+    this.size++;
+  }
 
 
 }

@@ -120,4 +120,23 @@ describe('Linked Lists', () => {
     expect(list.size).toEqual(3);
     expect(list.head.value.value).toBe('abbeyThree');
   });
+
+  it('Can successfully insert after a node in the middle of the linked list', () => {
+    const list = new linkedListClass.LinkedList();
+
+    const valueOne = 'abbey';
+    const valueTwo = 'abbeyTwo';
+    const valueThree = 'abbeyThree';
+    list.insert(valueOne);
+    list.insert(valueTwo);
+    list.insert(valueThree);
+    expect(list.size).toEqual(3);
+    expect(list.head.value).toEqual('abbeyThree');
+
+  });
+
+  it('Can successfully insert a node after the last node of the linked list', () => {
+
+  });
+
 });

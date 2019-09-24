@@ -14,7 +14,7 @@ class LinkedList {
    * Inserts value into a Node List at the head 
    * @param value 
    */
-
+  
   insert(value) {
     const node = new Node(value);
     node.next = this.head;
@@ -53,6 +53,26 @@ class LinkedList {
       currentNode = currentNode.next;
     } return emptyStr;
   } 
+
+  /**
+   * Adds a new node with the given value to the end of the list
+   * @param value
+   */
+
+  append(value) {
+    const node = new Node(value);
+    if(this.head === null) {
+      this.head = node;
+    }
+    else {
+      let currentNode = this.head;
+      while(currentNode.next) {
+        currentNode = currentNode.next;
+      }
+      currentNode.next = node;
+      this.size++;
+    }
+  }
 }
 
 module.exports = {

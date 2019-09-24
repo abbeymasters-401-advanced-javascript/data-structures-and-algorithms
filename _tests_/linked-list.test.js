@@ -66,4 +66,16 @@ describe('Linked Lists', () => {
     expect(list.toString()).toBe(' abbeyThree abbeyTwo abbey');
   });
 
+  it('Can successfully add a node to the end of the linked list', () => {
+    const list = new linkedListClass.LinkedList();
+    const valueOne = 'abbey';
+    const valueTwo = 'abbeyTwo';
+    const valueThree = 'abbeyThree';
+    list.insert(valueOne);
+    list.insert(valueTwo);
+    list.append(valueThree);
+
+    expect(list.size).toEqual(3);
+  });
+
 });

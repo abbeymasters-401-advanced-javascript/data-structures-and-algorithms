@@ -76,6 +76,7 @@ describe('Linked Lists', () => {
     list.append(valueThree);
 
     expect(list.size).toEqual(3);
+    expect(list.head.next.next.value).toBe('abbeyThree');
   });
 
 });

@@ -14,7 +14,7 @@ class LinkedList {
    * Inserts value into a Node List at the head 
    * @param value 
    */
-
+  
   insert(value) {
     const node = new Node(value);
     node.next = this.head;
@@ -31,13 +31,9 @@ class LinkedList {
 
   includes(value) {
     let currentNode = this.head;
-    for(let i = 0; i < this.size; i++) {
-      if(currentNode.value === value) {
-        return true;
-      } else {
-        currentNode = currentNode.next;
-      }
-    } return false;
+    while(currentNode.value !== value) {
+      return false;
+    } return true;
   }
 
   /**
@@ -48,11 +44,67 @@ class LinkedList {
   toString() {
     let emptyStr = '';
     let currentNode = this.head;
-    for(let i = 0; i < this.size; i++) {
+
+    while(currentNode !== null) {
       emptyStr += ` ${currentNode.value}`;
       currentNode = currentNode.next;
-    } return emptyStr;
+    } 
+    return emptyStr;
   } 
+
+  /**
+   * Adds a new node with the given value to the end of the list
+   * @param value
+   */
+
+  append(value) {
+    const node = new Node(value);
+    if(this.head === null) {
+      this.head = node;
+    }
+    else {
+      let currentNode = this.head;
+      while(currentNode.next) {
+        currentNode = currentNode.next;
+      }
+      currentNode.next = node;
+      this.size++;
+    }
+  }
+  insertBefore(value, newVal) {
+    const node = new Node(newVal);
+    let currentNode = this.head;
+
+    if(currentNode === null) {
+      currentNode = node;
+      this.size++;
+    } else {
+      while(currentNode.next.value !== value) {
+        currentNode = currentNode.next;
+      } 
+      node.next = currentNode.next;
+      currentNode.next = node;
+    
+      this.size++;
+    }
+  }
+
+  insertAfter(value, newVal) {
+    const node = new Node(newVal);
+    let currentNode = this.head;
+
+    if(currentNode === null) {
+      currentNode = node;
+      this.size++;
+    } else {
+      while(currentNode.value !== value) {
+        currentNode = currentNode.next;
+      }
+    } 
+    node.next = currentNode;
+    currentNode.next = node;
+    this.size++;
+  }
 }
 
 module.exports = {

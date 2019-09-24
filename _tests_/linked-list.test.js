@@ -79,4 +79,19 @@ describe('Linked Lists', () => {
     expect(list.head.next.next.value).toBe('abbeyThree');
   });
 
+  it('Can successfully add multiple nodes to the end of a linked list', () => {
+    const list = new linkedListClass.LinkedList();
+
+    const valueOne = 'abbey';
+    const valueTwo = 'abbeyTwo';
+    const valueThree = 'abbeyThree';
+
+    list.insert(valueOne);
+    list.append(valueTwo);
+    list.append(valueThree);
+    expect(list.size).toEqual(3);
+    expect(list.head.next.value).toEqual('abbeyTwo');
+    expect(list.head.next.next.value).toEqual('abbeyThree');
+  });
+
 });

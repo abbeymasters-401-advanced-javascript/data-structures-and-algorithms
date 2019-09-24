@@ -102,10 +102,10 @@ describe('Linked Lists', () => {
     list.insert(valueOne);
     list.insert(valueTwo);
     list.insert(valueThree);
-    list.insertBefore('abbey', 'abbeyMIDDLE');
+    list.insertBefore(valueTwo, 'abbeyMIDDLE');
 
     expect(list.size).toEqual(4);
-    expect(list.head.next.value.value).toBe('abbeyMIDDLE');
+    expect(list.toString()).toBe(' abbeyThree abbeyMIDDLE abbeyTwo abbey');
   });
 
   it('Can successfully insert a node before the first node of a linked list', () => {
@@ -118,7 +118,7 @@ describe('Linked Lists', () => {
     list.insert(valueTwo);
     list.insertBefore(valueOne, valueThree);
     expect(list.size).toEqual(3);
-    expect(list.head.value.value).toBe('abbeyThree');
+    expect(list.head.value).toBe('abbeyTwo');
   });
 
   it('Can successfully insert after a node in the middle of the linked list', () => {

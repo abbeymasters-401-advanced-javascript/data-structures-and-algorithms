@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1569300337003" clover="3.2.0">
-  <project timestamp="1569300337003" name="All files">
-    <metrics statements="68" coveredstatements="61" conditionals="12" coveredconditionals="6" methods="10" coveredmethods="10" elements="90" coveredelements="77" complexity="0" loc="68" ncloc="68" packages="3" files="3" classes="3"/>
+<coverage generated="1569349393020" clover="3.2.0">
+  <project timestamp="1569349393020" name="All files">
+    <metrics statements="70" coveredstatements="62" conditionals="12" coveredconditionals="6" methods="10" coveredmethods="10" elements="92" coveredelements="78" complexity="0" loc="70" ncloc="70" packages="3" files="3" classes="3"/>
     <package name="arrayBinarySearch">
       <metrics statements="12" coveredstatements="10" conditionals="6" coveredconditionals="3" methods="1" coveredmethods="1"/>
       <file name="array-binary-search.js" path="/Users/abbeymasters/alchemy/career-track/data-structures-and-algorithms/challenges/arrayBinarySearch/array-binary-search.js">
@@ -38,9 +38,9 @@
       </file>
     </package>
     <package name="linkedList">
-      <metrics statements="45" coveredstatements="40" conditionals="6" coveredconditionals="3" methods="8" coveredmethods="8"/>
+      <metrics statements="47" coveredstatements="41" conditionals="6" coveredconditionals="3" methods="8" coveredmethods="8"/>
       <file name="linked-list.js" path="/Users/abbeymasters/alchemy/career-track/data-structures-and-algorithms/challenges/linkedList/linked-list.js">
-        <metrics statements="45" coveredstatements="40" conditionals="6" coveredconditionals="3" methods="8" coveredmethods="8"/>
+        <metrics statements="47" coveredstatements="41" conditionals="6" coveredconditionals="3" methods="8" coveredmethods="8"/>
         <line num="3" count="31" type="stmt"/>
         <line num="4" count="31" type="stmt"/>
         <line num="10" count="13" type="stmt"/>
@@ -53,12 +53,12 @@
         <line num="34" count="2" type="stmt"/>
         <line num="35" count="1" type="stmt"/>
         <line num="36" count="1" type="stmt"/>
-        <line num="45" count="1" type="stmt"/>
-        <line num="46" count="1" type="stmt"/>
-        <line num="48" count="1" type="stmt"/>
-        <line num="49" count="3" type="stmt"/>
-        <line num="50" count="3" type="stmt"/>
-        <line num="52" count="1" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="48" count="2" type="stmt"/>
+        <line num="49" count="7" type="stmt"/>
+        <line num="50" count="7" type="stmt"/>
+        <line num="52" count="2" type="stmt"/>
         <line num="61" count="4" type="stmt"/>
         <line num="62" count="4" type="cond" truecount="1" falsecount="1"/>
         <line num="63" count="0" type="stmt"/>
@@ -73,19 +73,21 @@
         <line num="79" count="0" type="stmt"/>
         <line num="80" count="0" type="stmt"/>
         <line num="82" count="2" type="stmt"/>
-        <line num="83" count="1" type="stmt"/>
+        <line num="83" count="0" type="stmt"/>
         <line num="85" count="2" type="stmt"/>
         <line num="86" count="2" type="stmt"/>
-        <line num="91" count="1" type="stmt"/>
-        <line num="92" count="1" type="stmt"/>
-        <line num="94" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="95" count="0" type="stmt"/>
-        <line num="96" count="0" type="stmt"/>
-        <line num="98" count="1" type="stmt"/>
-        <line num="99" count="1" type="stmt"/>
+        <line num="88" count="2" type="stmt"/>
+        <line num="93" count="1" type="stmt"/>
+        <line num="94" count="1" type="stmt"/>
+        <line num="96" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="97" count="0" type="stmt"/>
+        <line num="98" count="0" type="stmt"/>
+        <line num="100" count="1" type="stmt"/>
         <line num="101" count="1" type="stmt"/>
-        <line num="102" count="1" type="stmt"/>
-        <line num="109" count="1" type="stmt"/>
+        <line num="104" count="1" type="stmt"/>
+        <line num="105" count="1" type="stmt"/>
+        <line num="106" count="1" type="stmt"/>
+        <line num="110" count="1" type="stmt"/>
       </file>
     </package>
   </project>

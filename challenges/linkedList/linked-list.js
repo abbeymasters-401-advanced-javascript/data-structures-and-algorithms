@@ -82,7 +82,9 @@ class LinkedList {
       while(currentNode.next.value !== value) {
         currentNode = currentNode.next;
       } 
-      currentNode.value = node;
+      node.next = currentNode.next;
+      currentNode.next = node;
+    
       this.size++;
     }
   }
@@ -98,13 +100,12 @@ class LinkedList {
       while(currentNode.value !== value) {
         currentNode = currentNode.next;
       }
-    } currentNode.next = node;
+    } 
+    node.next = currentNode;
+    currentNode.next = node;
     this.size++;
   }
-
-
 }
-
 
 module.exports = {
   Node,

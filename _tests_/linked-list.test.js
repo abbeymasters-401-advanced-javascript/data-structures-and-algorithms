@@ -153,4 +153,69 @@ describe('Linked Lists', () => {
     expect(list.head.next.next.next.value).toBe('abbeyLAST');
   });
 
+  it('Where k is greater than the length of the linked list', () => {
+    const list = new linkedListClass.LinkedList();
+
+    const valueOne = 'abbey';
+    const valueTwo = 'abbeyTwo';
+    const valueThree = 'abbeyThree';
+    list.insert(valueOne);
+    list.insert(valueTwo);
+    list.insert(valueThree);
+
+    expect(list.kthFromEnd(4)).toBe('exception');
+  });
+
+  it('Where k and the length of the list are the same', () => {
+    const list = new linkedListClass.LinkedList();
+
+    const valueOne = 'abbey';
+    const valueTwo = 'abbeyTwo';
+    const valueThree = 'abbeyThree';
+    list.insert(valueOne);
+    list.insert(valueTwo);
+    list.insert(valueThree);
+
+    expect(list.kthFromEnd(3)).toBe('exception');
+  });
+
+  it('Where k is not a positive integer', () => {
+    const list = new linkedListClass.LinkedList();
+
+    const valueOne = 'abbey';
+    const valueTwo = 'abbeyTwo';
+    const valueThree = 'abbeyThree';
+    list.insert(valueOne);
+    list.insert(valueTwo);
+    list.insert(valueThree);
+
+    expect(list.kthFromEnd(-1)).toBe('exception');
+    expect(list.kthFromEnd('hello')).toBe('exception');
+  });
+
+  it('Where the linked list is of a size 1', () => {
+    const list = new linkedListClass.LinkedList();
+
+    const valueOne = 'abbey';
+    list.insert(valueOne);
+    expect(list.kthFromEnd(1)).toBe('exception');
+  });
+
+  it('“Happy Path” where k is not at the end, but somewhere in the middle of the linked list', () => {
+    const list = new linkedListClass.LinkedList();
+
+    const valueOne = 'abbey';
+    const valueTwo = 'abbeyTwo';
+    const valueThree = 'abbeyThree';
+    const valueFour = 'abbeyFour';
+    list.insert(valueOne);
+    list.insert(valueTwo);
+    list.insert(valueThree);
+    list.insert(valueFour);
+    console.log(list.toString());
+    expect(list.kthFromEnd(2)).toBe('abbeyThree');
+    expect(list.kthFromEnd(0)).toBe('abbey');
+    expect(list.kthFromEnd(1)).toBe('abbeyTwo');
+  });
+
 });

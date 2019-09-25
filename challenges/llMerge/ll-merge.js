@@ -12,8 +12,17 @@ function mergeLists(list1, list2) {
     currentOne = currentOne.next;
     currentTwo = currentTwo.next;
   }
+  while(currentOne.next !== null) {
+    finalList.append(currentOne.value);
+    currentOne = currentOne.next;
+  }
   finalList.append(currentOne.value);
+  while(currentTwo.next !== null) {
+    finalList.append(currentTwo.value);
+    currentTwo = currentTwo.next;
+  }
   finalList.append(currentTwo.value);
+  console.log(finalList.toString());
   return finalList.head;
 }
 

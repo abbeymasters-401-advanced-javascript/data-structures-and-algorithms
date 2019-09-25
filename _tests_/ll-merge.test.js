@@ -16,4 +16,17 @@ describe('Merge Lists Test', () => {
 
     expect(mergeLists(list1, list2).value).toBe('alex');
   }); 
+
+  it('merges two lists of different lengths', () => {
+    const list1 = new linkedListClass.LinkedList();
+    const list2 = new linkedListClass.LinkedList();
+    
+    list1.insert('abbey');
+    list1.insert('allison');
+    list2.insert('hello');
+    list2.insert('goodbye');
+    list2.insert('thing');
+    
+    expect(mergeLists(list1, list2).value).toBe('allison');
+  });
 });

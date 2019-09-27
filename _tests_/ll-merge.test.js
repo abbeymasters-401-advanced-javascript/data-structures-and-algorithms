@@ -55,8 +55,8 @@ describe('Merge Lists Test', () => {
     const result = mergeLists(list1, list2);
     expect(result.next.value).toBe('thing');
     expect(result.next.next.value).toBe('allison');
-    expect(result.next.next.next.value).toBe('goodbye');
-    expect(result.next.next.next.next.value).toBe('abbey'); 
+    expect(result.next.next.next.value).toBe('abbey');
+    expect(result.next.next.next.next.value).toBe('goodbye'); 
   });
 
 });

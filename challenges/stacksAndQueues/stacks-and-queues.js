@@ -35,9 +35,8 @@ class Stack {
   }
 
   peek() {
-    return this.stack.value;
+    return this.top.value;
   }
-
 }
 
 
@@ -46,16 +45,33 @@ class Queue {
     this.front = null;
   }
 
-  enqueue() {
-
+  enqueue(value) {
+    let newNode = new Node(value);
+    let currentNode = this.front;
+    if (!currentNode) {
+      this.front = newNode;
+    } else {
+      while (currentNode.next) {
+        currentNode = currentNode.next;
+      }
+      currentNode.next = new Node(value);
+    }
   }
 
   dequeue() {
-
+    let currentNode = this.front;
+    let answer;
+    if (!currentNode) {
+      return 'empty queue';
+    } else {
+      answer = currentNode.value;
+      this.front = currentNode.next;
+    }
+    return answer;
   }
 
   peek() {
-
+    return this.front.value;
   }
 }
 

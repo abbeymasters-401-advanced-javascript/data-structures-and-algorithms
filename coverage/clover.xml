@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1569611519699" clover="3.2.0">
-  <project timestamp="1569611519699" name="All files">
-    <metrics statements="98" coveredstatements="91" conditionals="18" coveredconditionals="13" methods="12" coveredmethods="12" elements="128" coveredelements="116" complexity="0" loc="98" ncloc="98" packages="4" files="4" classes="4"/>
+<coverage generated="1569898565070" clover="3.2.0">
+  <project timestamp="1569898565070" name="All files">
+    <metrics statements="133" coveredstatements="122" conditionals="30" coveredconditionals="25" methods="21" coveredmethods="21" elements="184" coveredelements="168" complexity="0" loc="133" ncloc="133" packages="5" files="5" classes="5"/>
     <package name="arrayBinarySearch">
       <metrics statements="12" coveredstatements="10" conditionals="6" coveredconditionals="3" methods="1" coveredmethods="1"/>
       <file name="array-binary-search.js" path="/Users/abbeymasters/alchemy/career-track/data-structures-and-algorithms/challenges/arrayBinarySearch/array-binary-search.js">
@@ -99,30 +99,7 @@
       </file>
     </package>
     <package name="llMerge">
-      <metrics statements="20" coveredstatements="20" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+
+      <metrics statements="26" coveredstatements="22" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
       <file name="ll-merge.js" path="/Users/abbeymasters/alchemy/career-track/data-structures-and-algorithms/challenges/llMerge/ll-merge.js">
-        <metrics statements="20" coveredstatements="20" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="4" count="6" type="stmt"/>
-        <line num="5" count="6" type="stmt"/>
-        <line num="6" count="6" type="stmt"/>
-        <line num="8" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="9" count="8" type="stmt"/>
-        <line num="10" count="8" type="stmt"/>
-        <line num="12" count="8" type="stmt"/>
-        <line num="13" count="8" type="stmt"/>
-        <line num="15" count="6" type="stmt"/>
-        <line num="16" count="2" type="stmt"/>
-        <line num="17" count="2" type="stmt"/>
-        <line num="19" count="6" type="stmt"/>
-        <line num="20" count="6" type="stmt"/>
-        <line num="21" count="2" type="stmt"/>
-        <line num="22" count="2" type="stmt"/>
-        <line num="24" count="6" type="stmt"/>
-        <line num="25" count="6" type="stmt"/>
-        <line num="26" count="6" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
-      </file>
-    </package>
-  </project>
-</coverage>
+        <metrics statements="26" coveredstatements="22" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>

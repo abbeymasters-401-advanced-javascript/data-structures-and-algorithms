@@ -1,4 +1,4 @@
-const { Node, Stack, Queue } = require('../challenges/stacksAndQueues/stacks-and-queues');
+const { Stack, Queue } = require('../challenges/stacksAndQueues/stacks-and-queues');
 
 describe('Stacks and Queues', () => {
 

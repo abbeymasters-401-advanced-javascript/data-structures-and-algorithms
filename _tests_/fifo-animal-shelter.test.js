@@ -19,8 +19,7 @@ describe('fifo animal shelter', () => {
     animalShelter.enqueue({ name: 'alex', type: 'dog' });
     animalShelter.enqueue({ name: 'allison', type: 'cat' });
     
-    let results = animalShelter.dogsQueue.dequeue().name;
-    console.log(results);
-    expect(results).toBe('alex');
+    let results = animalShelter.dogsQueue.dequeue();
+    expect(results).toBe('abbey');
   });
 });

@@ -1,21 +1,28 @@
+const { Queue } = require('../stacksAndQueues/stacks-and-queues');
 
 class AnimalShelter {
   constructor(value) {
-    this.top = null;
+    this.dogsQueue = new Queue();
+    this.catsQueue = new Queue();
   }
 
   enqueue(animal) {
-    this.list.push(animal);
-  }
-  
-  dequeue(type) {
-    let found = null;
-    if(type) {
-      found = this.list.findAndRemove(pet => pet.type === type);
+    if (animal.type === 'dog') {
+      this.dogsQueue.enqueue(animal.name);
+    } else if (animal.type === 'cat') {
+      this.catsQueue.enqueue(animal.name);
     }
-    
-    if(!found) found = this.list.remove();
-    return found;
+  }
+
+  dequeue(pref) {
+    if (pref === 'dog') {
+      return this.dogsQueue.dequeue();
+    } else if(pref === 'cat') {
+      return this.catsQueue.dequeue();
+    }
+    else {
+      return null;
+    }
   }
 }
 

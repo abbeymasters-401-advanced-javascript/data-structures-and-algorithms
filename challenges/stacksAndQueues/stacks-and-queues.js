@@ -25,6 +25,12 @@ class Stack {
     }
   }
 
+  /**
+  * Take one node off the top of the stack
+  * @param none
+  * return top node's value 
+  */
+
   pop() {
     let answer;
     if (this.top) {
@@ -34,8 +40,15 @@ class Stack {
     return answer;
   }
 
+  /**
+  * Check top node's value
+  * @param none
+  * return value of top node 
+  */
+
   peek() {
-    return this.top.value;
+    if(this.top) return this.top.value;
+    else return null;
   }
 }
 
@@ -48,6 +61,7 @@ class Queue {
   enqueue(value) {
     let newNode = new Node(value);
     let currentNode = this.front;
+
     if (!currentNode) {
       this.front = newNode;
     } else {
@@ -61,6 +75,7 @@ class Queue {
   dequeue() {
     let currentNode = this.front;
     let answer;
+    
     if (!currentNode) {
       return 'empty queue';
     } else {

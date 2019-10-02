@@ -1,5 +1,4 @@
 const { AnimalShelter } = require('../challenges/fifoAnimalShelter/fifo-animal-shelter');
-const { Queue } = require('../challenges/stacksAndQueues/stacks-and-queues');
 
 describe('fifo animal shelter', () => {
 

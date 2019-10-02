@@ -6,3 +6,4 @@
 * Create a Queue class that has a front property. It creates an empty Queue when instantiated.
 
 ## Approach & Efficiency
+Created a Node class, a Stack class and a Queue class to build multiple push, pop, peek methods off of. 

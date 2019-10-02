@@ -212,7 +212,6 @@ describe('Linked Lists', () => {
     list.insert(valueTwo);
     list.insert(valueThree);
     list.insert(valueFour);
-    console.log(list.toString());
     expect(list.kthFromEnd(2)).toBe('abbeyThree');
     expect(list.kthFromEnd(0)).toBe('abbey');
     expect(list.kthFromEnd(1)).toBe('abbeyTwo');

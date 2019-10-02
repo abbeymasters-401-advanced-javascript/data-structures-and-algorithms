@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1569992664502" clover="3.2.0">
-  <project timestamp="1569992664502" name="All files">
-    <metrics statements="150" coveredstatements="139" conditionals="32" coveredconditionals="27" methods="24" coveredmethods="24" elements="206" coveredelements="190" complexity="0" loc="150" ncloc="150" packages="6" files="6" classes="6"/>
+<coverage generated="1570036276268" clover="3.2.0">
+  <project timestamp="1570036276268" name="All files">
+    <metrics statements="157" coveredstatements="141" conditionals="36" coveredconditionals="27" methods="28" coveredmethods="26" elements="221" coveredelements="194" complexity="0" loc="157" ncloc="157" packages="7" files="7" classes="7"/>
     <package name="arrayBinarySearch">
       <metrics statements="12" coveredstatements="10" conditionals="6" coveredconditionals="3" methods="1" coveredmethods="1"/>
       <file name="array-binary-search.js" path="/Users/abbeymasters/alchemy/career-track/data-structures-and-algorithms/challenges/arrayBinarySearch/array-binary-search.js">
@@ -37,6 +37,20 @@
         <line num="15" count="1" type="stmt"/>
       </file>
     </package>
+    <package name="fifoAnimalShelter">
+      <metrics statements="8" coveredstatements="3" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="2"/>
+      <file name="fifo-animal-shelter.js" path="/Users/abbeymasters/alchemy/career-track/data-structures-and-algorithms/challenges/fifoAnimalShelter/fifo-animal-shelter.js">
+        <metrics statements="8" coveredstatements="3" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="2"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="17" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="linkedList">
       <metrics statements="55" coveredstatements="50" conditionals="10" coveredconditionals="8" methods="9" coveredmethods="9"/>
       <file name="linked-list.js" path="/Users/abbeymasters/alchemy/career-track/data-structures-and-algorithms/challenges/linkedList/linked-list.js">
@@ -53,12 +67,12 @@
         <line num="34" count="2" type="stmt"/>
         <line num="35" count="1" type="stmt"/>
         <line num="36" count="1" type="stmt"/>
-        <line num="45" count="9" type="stmt"/>
-        <line num="46" count="9" type="stmt"/>
-        <line num="48" count="9" type="stmt"/>
-        <line num="49" count="43" type="stmt"/>
-        <line num="50" count="43" type="stmt"/>
-        <line num="52" count="9" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="48" count="2" type="stmt"/>
+        <line num="49" count="7" type="stmt"/>
+        <line num="50" count="7" type="stmt"/>
+        <line num="52" count="2" type="stmt"/>
         <line num="61" count="36" type="stmt"/>
         <line num="62" count="36" type="cond" truecount="2" falsecount="0"/>
         <line num="63" count="6" type="stmt"/>
@@ -99,9 +113,9 @@
       </file>
     </package>
     <package name="llMerge">
-      <metrics statements="26" coveredstatements="22" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+      <metrics statements="25" coveredstatements="21" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
       <file name="ll-merge.js" path="/Users/abbeymasters/alchemy/career-track/data-structures-and-algorithms/challenges/llMerge/ll-merge.js">
-        <metrics statements="26" coveredstatements="22" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+        <metrics statements="25" coveredstatements="21" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="4" count="6" type="stmt"/>
         <line num="5" count="6" type="stmt"/>
@@ -126,8 +140,7 @@
         <line num="29" count="0" type="stmt"/>
         <line num="31" count="2" type="stmt"/>
         <line num="33" count="6" type="stmt"/>
-        <line num="34" count="6" type="stmt"/>
-        <line num="37" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
       </file>
     </package>
     <package name="queueWithStacks">

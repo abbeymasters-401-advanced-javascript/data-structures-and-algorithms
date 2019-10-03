@@ -30,7 +30,6 @@ function mergeLists(list1, list2) {
     }
     finalList.append(currentTwo.value);
   }
-  console.log(finalList.toString());
   return finalList.head;
 }
 

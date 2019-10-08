@@ -22,9 +22,18 @@ describe('Binary Tree tests', () => {
     expect(binaryTree.root.right.value).toBe('C');
   });
 
-  it.skip('Can successfully return a collection from a preorder traversal', () => {
+  it('Can successfully return a collection from a preorder traversal', () => {
     const binaryTree = new BinaryTree();
-    
+    binaryTree.root = new Node(20);
+    binaryTree.root.left = new Node(10);
+    binaryTree.root.left.left = new Node(5);
+    binaryTree.root.right = new Node(25);
+    binaryTree.root.right.left = new Node(23);
+    binaryTree.root.right.right = new Node(30);
+    binaryTree.preOrder(20);
+    expect(binaryTree.root.left.left.value).toBe(5);
+    expect(binaryTree.root.right.left.value).toBe(23);
+    expect(binaryTree.root.value).toBe(20);
   });
 
   it.skip('Can successfully return a collection from an inorder traversal', () => {

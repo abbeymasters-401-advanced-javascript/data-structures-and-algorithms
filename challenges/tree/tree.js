@@ -12,22 +12,18 @@ class BinaryTree {
   }
 
   preOrder(root) {
-    if(root === null) return [];
-    let stack = [];
-    let result = [];
-    stack.push(root);
-    while(stack.length > 0) {
-      let node = stack.pop();
-      result.push(node.val);
-      if(node.right) stack.push(node.right);
-      if(node.left) stack.push(node.left);
+    preOrderHelper(this.root);
+    function preOrderHelper(root) {
+      if(root !== null) {
+        preOrderHelper(root.left);
+        preOrderHelper(root.right);
+      }
     }
-    return result;
   }
 }
 
 
 module.exports = {
-  Node, 
+  Node,
   BinaryTree,
 };

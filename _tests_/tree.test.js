@@ -30,19 +30,31 @@ describe('Binary Tree tests', () => {
     binaryTree.root.right = new Node(25);
     binaryTree.root.right.left = new Node(23);
     binaryTree.root.right.right = new Node(30);
-    binaryTree.preOrder(20);
     expect(binaryTree.root.left.left.value).toBe(5);
     expect(binaryTree.root.right.left.value).toBe(23);
     expect(binaryTree.root.value).toBe(20);
+    expect(binaryTree.preOrder(binaryTree.root)).toEqual([20, 10, 5, 25, 23, 30]);
   });
 
-  it.skip('Can successfully return a collection from an inorder traversal', () => {
+  it('Can successfully return a collection from an inorder traversal', () => {
     const binaryTree = new BinaryTree();
-
+    binaryTree.root = new Node(20);
+    binaryTree.root.left = new Node(10);
+    binaryTree.root.left.left = new Node(5);
+    binaryTree.root.right = new Node(25);
+    binaryTree.root.right.left = new Node(23);
+    binaryTree.root.right.right = new Node(30);
+    expect(binaryTree.inorder(binaryTree.root)).toEqual([5, 10, 20, 23, 25, 30]);
   });
 
-  it.skip('Can successfully return a collection from a postorder traversal', () => {
+  it('Can successfully return a collection from a postorder traversal', () => {
     const binaryTree = new BinaryTree();
+    binaryTree.root = new Node('A');
+    binaryTree.root.left = new Node('B');
+    binaryTree.root.left.left = new Node('D');
+    binaryTree.root.left.right = new Node('E');
+    binaryTree.root.right = new Node('C');
+    expect(binaryTree.inorder(binaryTree.root)).toEqual(['D', 'E', 'B', 'C', 'A']);
   });
 
 });

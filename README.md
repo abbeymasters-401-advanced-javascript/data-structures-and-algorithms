@@ -11,3 +11,4 @@
 [Day Eleven] — (challenges/queueWithStacks/queue-with-stacks.js)
 [Day Twelve] — (challenges/fifoAnimalShelter/fifo-animal-shelter.js)
 [Day Fifteen] — (challenges/tree/tree.js)
+[Day Sixteen] — (challenges/fizzBuzzTree/fizz-buzz-tree.js)

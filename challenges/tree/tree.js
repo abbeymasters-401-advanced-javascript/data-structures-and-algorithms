@@ -57,15 +57,6 @@ class BinarySearchTree {
   }
 }
 
-function containsRecursive(value, rootValue) {
-  let direction;
-  if(value === rootValue.value) return true;
-  if(value < rootValue.value) direction = 'left';
-  else direction = 'right';
-  if(rootValue[direction]) return containsRecursive(value, rootValue[direction]);
-  else return false;
-}
-
 function addRecursive(value, rootValue) {
   let direction;
   if(value < rootValue.value) direction = 'left';
@@ -75,6 +66,16 @@ function addRecursive(value, rootValue) {
   }
   return rootValue[direction] = new Node(value);
 }
+
+function containsRecursive(value, rootValue) {
+  let direction;
+  if(value === rootValue.value) return true;
+  if(value < rootValue.value) direction = 'left';
+  else direction = 'right';
+  if(rootValue[direction]) return containsRecursive(value, rootValue[direction]);
+  else return false;
+}
+
 
 module.exports = {
   Node,

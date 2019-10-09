@@ -39,7 +39,30 @@ class BinaryTree {
   }
 }
 
+class BinarySearchTree {
+  constructor(value) {
+    this.left = null;
+    this.right = null;
+    this.value = value;
+  }
+
+  add(value) {
+    const newValue = new Node(value);
+    const currentValue = this.root;
+    if(currentValue > newValue && currentValue.left === undefined) {
+      currentValue.left = newValue;
+    } else if(currentValue > newValue) {
+      this.add(newValue.left);
+    } else if(currentValue < newValue && currentValue.right === undefined) {
+      currentValue.right = newValue;
+    } else if(currentValue < newValue) {
+      this.add(newValue.right);
+    }
+  }
+}
+
 module.exports = {
   Node,
   BinaryTree,
+  BinarySearchTree,
 };

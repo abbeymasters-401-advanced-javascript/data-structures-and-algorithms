@@ -49,12 +49,13 @@ describe('Binary Tree tests', () => {
 
   it('Can successfully return a collection from a postorder traversal', () => {
     const binaryTree = new BinaryTree();
-    binaryTree.root = new Node('A');
-    binaryTree.root.left = new Node('B');
-    binaryTree.root.left.left = new Node('D');
-    binaryTree.root.left.right = new Node('E');
-    binaryTree.root.right = new Node('C');
-    expect(binaryTree.inorder(binaryTree.root)).toEqual(['D', 'E', 'B', 'C', 'A']);
+    binaryTree.root = new Node(20);
+    binaryTree.root.left = new Node(10);
+    binaryTree.root.left.left = new Node(5);
+    binaryTree.root.right = new Node(25);
+    binaryTree.root.right.left = new Node(23);
+    binaryTree.root.right.right = new Node(30);
+    expect(binaryTree.inorder(binaryTree.root)).toEqual([5, 10, 20, 23, 25, 30]);
   });
 
 });

@@ -47,18 +47,33 @@ class BinarySearchTree {
   }
 
   add(value) {
-    const newValue = new Node(value);
-    const currentValue = this.root;
-    if(currentValue > newValue && currentValue.left === undefined) {
-      currentValue.left = newValue;
-    } else if(currentValue > newValue) {
-      this.add(newValue.left);
-    } else if(currentValue < newValue && currentValue.right === undefined) {
-      currentValue.right = newValue;
-    } else if(currentValue < newValue) {
-      this.add(newValue.right);
-    }
+    let rootValue = this.root;
+    return addRecursive(value, rootValue);
   }
+
+  contains(value) {
+    let rootValue = this.root;
+    return containsRecursive(value, rootValue);
+  }
+}
+
+function containsRecursive(value, rootValue) {
+  let direction;
+  if(value === rootValue.value) return true;
+  if(value < rootValue.value) direction = 'left';
+  else direction = 'right';
+  if(rootValue[direction]) return containsRecursive(value, rootValue[direction]);
+  else return false;
+}
+
+function addRecursive(value, rootValue) {
+  let direction;
+  if(value < rootValue.value) direction = 'left';
+  else direction = 'right';
+  if(rootValue[direction]) { 
+    return addRecursive(value, rootValue[direction]); 
+  }
+  return rootValue[direction] = new Node(value);
 }
 
 module.exports = {

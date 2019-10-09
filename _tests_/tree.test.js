@@ -57,7 +57,6 @@ describe('Binary Tree tests', () => {
     binaryTree.root.right.right = new Node(30);
     expect(binaryTree.inorder(binaryTree.root)).toEqual([5, 10, 20, 23, 25, 30]);
   });
-
 });
 
 describe('binary search tree', () => {
@@ -68,7 +67,16 @@ describe('binary search tree', () => {
     binaryTree.root.left.left = new Node(5);
     binaryTree.root.right = new Node(25);
     binaryTree.add(36);
-    console.log(binaryTree);
-    expect(binaryTree.root.right.right).toBe(36);
+    expect(binaryTree.root.right.right.value).toBe(36);
+  });
+
+  it('contains the value', () => {
+    const binaryTree = new BinarySearchTree();
+    binaryTree.root = new Node(20);
+    binaryTree.root.left = new Node(10);
+    binaryTree.root.left.left = new Node(5);
+    binaryTree.root.right = new Node(25);
+    expect(binaryTree.contains(10)).toBe(true);
+    expect(binaryTree.contains(40)).toBe(false);
   });
 });

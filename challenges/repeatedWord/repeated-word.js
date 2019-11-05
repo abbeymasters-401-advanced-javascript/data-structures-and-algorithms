@@ -2,7 +2,7 @@ function repeatedWord(string) {
   let obj = {};
   let count = 0;
   let newArray = [];
-  const newString = string.split(' ');
+  let newString = string.toLowerCase().split(' ');
   
   newString.map(word => {  
     if(obj[word] !== undefined) {
@@ -10,7 +10,7 @@ function repeatedWord(string) {
       return newArray;
     } else obj[word] = count;
   });
-  return newArray;
+  return newArray[0];
 }
 
 module.exports = repeatedWord;

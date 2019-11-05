@@ -1,16 +1,14 @@
 function repeatedWord(string) {
   let obj = {};
   let count = 0;
-  let newArray = [];
   let newString = string.toLowerCase().split(' ');
-  
-  newString.map(word => {  
-    if(obj[word] !== undefined) {
-      newArray.push(word);
-      return newArray;
-    } else obj[word] = count;
-  });
-  return newArray[0];
+
+  for (let i = 0; i < newString.length; i++) {
+    if (!obj[newString[i]]) {
+      count++;
+      obj[newString[i]] = count;
+    } else if (obj[newString[i]]) return newString[i];
+  }
 }
 
 module.exports = repeatedWord;

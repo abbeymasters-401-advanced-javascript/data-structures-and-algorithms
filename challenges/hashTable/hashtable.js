@@ -1,32 +1,34 @@
 
-const DEFAULT_HASH = key => {
-  return key.split('')
-    .map(item => {
-      return item.charCodeAt(0);
-    })
-    .join('')
-    % 150;
-};
+const DEFAULT_HASH = size => key => key
+  .split('')
+  .map(item => {
+    return item.charCodeAt(0);
+  })
+  .join('')
+  % 150;
+
 
 class HashTable {
-  constructor(hashAlgorithm = DEFAULT_HASH) {
-    this.arr = [];
+  constructor(buckets = 150, hashAlgorithm = DEFAULT_HASH) {
+    this.arr = new Array(buckets).fill([]);
+    this.hashAlgorithm = hashAlgorithm(buckets);
   }
 
   add(key, value) {
     const index = this.hash(key);
     const bucket = this.arr[index];
 
-    if (bucket.length !== 0); // handle collisions
-    else bucket[index].push([key, value]);
-
+    if (this.get(key)) {
+      const item = bucket.find(([storedKey]) => storedKey === key);
+      item[1] = value;
+    } else {
+      bucket.push([key, value]);
+    }
   }
 
   get(key) {
     const index = this.hash(key);
     const bucket = this.arr[index];
-
-    if (bucket.length === 0) return null;
 
     const item = bucket.find(([storedKey]) => storedKey === key);
     if (!item) return null;
@@ -34,11 +36,7 @@ class HashTable {
   }
 
   contains(key) {
-    // does key exist in table already?
-    const index = this.hash(key);
-    const bucket = this.arr[index];
-
-    if(bucket.get(key) !== null) return false;
+    if (this.get(key) === null) return false;
     else return true;
   }
 

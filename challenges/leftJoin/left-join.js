@@ -9,11 +9,8 @@ function leftJoin(firstHashmap, secondHashmap) {
       newArray.push(arr[i][0]);
     }
   }
-  // console.log(newArray);
-  // console.log(secondArr);
   for(let j = 0; j < secondArr.length; j++) {
     if(secondArr[j].length >= 1) {
-      console.log(arr[j]);
       if(firstHashmap.get(secondArr[j][0][0])) {
         for(let k = 0; k < newArray.length; k++) {
           if(newArray[k][0] === secondArr[j][0][0]) {

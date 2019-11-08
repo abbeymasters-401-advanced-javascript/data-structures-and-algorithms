@@ -1,6 +1,6 @@
 const linkedListClass = require('../challenges/linkedList/linked-list.js');
 
-describe('Linked Lists', () => {
+describe.skip('Linked Lists', () => {
   it('instantiating an empty list', () => {
 
     const list = new linkedListClass.LinkedList();

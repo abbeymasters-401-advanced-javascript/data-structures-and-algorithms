@@ -2,7 +2,7 @@ const linkedListClass = require('../challenges/linkedList/linked-list.js');
 const mergeLists = require('../challenges/llMerge/ll-merge');
 
 
-describe('Merge Lists Test', () => {
+describe.skip('Merge Lists Test', () => {
   it('merges two lists', () => {
     const list1 = new linkedListClass.LinkedList();
     const list2 = new linkedListClass.LinkedList();

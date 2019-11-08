@@ -1,6 +1,6 @@
 const HashTable = require('../challenges/hashTable/hashtable');
 
-describe('testing hashtable functions', () => {
+describe.skip('testing hashtable functions', () => {
   const newTable = new HashTable();
   newTable.add('age', '50');
   newTable.add('color', 'red');
